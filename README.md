@@ -1,8 +1,8 @@
 ##### # crostini_notes - Adapted from https://github.com/davidmroth/cros-crostini
 
 
-#### Setting flags for Chrome OS
-##### (https://www.chromium.org/developers/how-tos/run-chromium-with-flags)
+##### Setting flags for Chrome OS
+####### (https://www.chromium.org/developers/how-tos/run-chromium-with-flags)
 
 - Put the device into dev mode, disable rootfs verification, and bring up a command prompt
 - Modify /etc/chrome_dev.conf (read the comments in the file for more details)
