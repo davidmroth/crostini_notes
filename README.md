@@ -15,22 +15,24 @@
 `vi /etc/chrome_dev.conf`, then append --enable-features=Crostini<br>
 
 ##### Setup container
-`vmc start dev`<br>
-`curl -Lo /tmp/stretch.tgz http://github.com/lstoll/cros-crostini/releases/download/0.1/stretch.tgz`<br>
-`lxc image import /tmp/stretch.tgz --alias stretch`
+```
+vmc start dev
+curl -Lo /tmp/stretch.tgz http://github.com/lstoll/cros-crostini/releases/download/0.1/stretch.tgz
+lxc image import /tmp/stretch.tgz --alias stretch
 
-`lxc launch stretch stretch`<br>
-`lxc exec stretch -- useradd -u 1000 \`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-s "/bin/bash" \`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-m "buser"`<br>
-`groups="audio cdrom dialout floppy plugdev sudo users video"`<br>
-`for group in ${groups}; do`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`lxc exec stretch -- usermod -aG "${group}" buser`<br>
-`done`<br>
+lxc launch stretch stretch
+   lxc exec stretch -- useradd -u 1000 \
+     -s "/bin/bash" \
+     -m "buser"
 
-`lxc exec stretch --  loginctl enable-linger buser`<br>
-`lxc exec stretch -- /bin/login -f buser`<br>
-<br>
+groups="audio cdrom dialout floppy plugdev sudo users video"
+for group in ${groups}; do
+   lxc exec stretch -- usermod -aG "${group}" buser
+done
+
+lxc exec stretch --  loginctl enable-linger buser
+lxc exec stretch -- /bin/login -f buser
+```
 
 #### To login as root
 `lxc exec stretch -- /bin/bash`<br>
