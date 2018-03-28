@@ -32,12 +32,11 @@
 
 `lxc exec stretch --  loginctl enable-linger buser`<br>
 `lxc exec stretch -- /bin/login -f buser`<br>
-
 <br>
+
 #### To login as root
-`lxc exec stretch -- /bin/bash`
+`lxc exec stretch -- /bin/bash`<br>
 
-<br>
 #### Install atom
 `apt update`<br>
 `apt install curl`<br>
