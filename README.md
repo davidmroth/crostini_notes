@@ -1,17 +1,19 @@
 ### # crostini_notes - Adapted from https://github.com/lstoll/cros-crostini
 
 
+##### Setting flags for Chrome OS
+##### #https://www.chromium.org/developers/how-tos/run-chromium-with-flags
+
+- Put the device into dev mode, disable rootfs verification, and bring up a command prompt
+- Modify /etc/chrome_dev.conf (read the comments in the file for more details)
+
+
 ##### #https://sites.google.com/site/cr48ite/getting-technical/remove-rootfs-verification-make-read-write
 `/usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification --partitions 4`<br>
 `mount -o remount,rw /`<br>
 
 `vi /etc/chrome_dev.conf`, then append --enable-features=Crostini<br>
 
-##### #https://www.chromium.org/developers/how-tos/run-chromium-with-flags
-
-##### Setting flags for Chrome OS
-- Put the device into dev mode, disable rootfs verification, and bring up a command prompt
-- Modify /etc/chrome_dev.conf (read the comments in the file for more details)
 - Restart the UI via:
   * `sudo restart ui`<br>
  
