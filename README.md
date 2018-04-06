@@ -19,7 +19,7 @@
 
 ### Install atom
 `apt update`<br>
-`apt install curl`<br>
+`apt install curl gnupg`<br>
 `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`<br>
 `apt update`<br>
 
