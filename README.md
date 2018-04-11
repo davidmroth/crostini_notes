@@ -1,3 +1,5 @@
+Here is a simple shell extension to simplify access to your Crostini container: https://github.com/davidmroth/chrome-secure-shell/tree/crostini
+
 ### # crostini_notes - Adapted from https://github.com/lstoll/cros-crostini
 <br>
 
