@@ -1,4 +1,6 @@
-Here is a simple shell extension to simplify access to your Crostini container: https://github.com/davidmroth/chrome-secure-shell/tree/crostini | Reddit discussion: https://www.reddit.com/r/Crostini/comments/8bet6j/crostini_shell_access_your_container_with_one/
+Here is a simple shell extension to simplify access to your Crostini container: 
+- https://github.com/davidmroth/chrome-secure-shell/tree/crostini
+- Reddit discussion: https://www.reddit.com/r/Crostini/comments/8bet6j/crostini_shell_access_your_container_with_one/
 
 
 ### # crostini_notes - Adapted from https://github.com/lstoll/cros-crostini
